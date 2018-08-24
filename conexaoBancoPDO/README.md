@@ -1,1 +1,1 @@
-Criando uma conexão simples com um banco de dados utulizando a biblioteca PDO.
+Criando uma conexão simples com um banco de dados utilizando a biblioteca PDO.
