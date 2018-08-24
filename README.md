@@ -1,0 +1,1 @@
+Pasta com os projetos e códigos criados durante meu aprendizado no curso de PHP
