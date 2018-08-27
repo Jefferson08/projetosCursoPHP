@@ -1,6 +1,6 @@
 
 <?php 
-	require 'calculadora.php';
+	require 'calculadora.class.php';
 
 	if (isset($_POST['tipo'])) {
 		$calc = new Calculadora();
