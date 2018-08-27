@@ -1,3 +1,29 @@
+
+<?php 
+	require 'calculadora.php';
+
+	if (isset($_POST['tipo'])) {
+		$calc = new Calculadora();
+
+		if ($_POST['tipo'] == 0) {
+			$resultado = $calc->somar($_POST['numero1'], $_POST['numero2']);
+			echo "Resultado: ".$resultado;
+		} elseif ($_POST['tipo'] == 1) {
+			$resultado = $calc->subtrair($_POST['numero1'], $_POST['numero2']);
+			echo "Resultado: ".$resultado;
+		} elseif ($_POST['tipo'] == 2) {
+			$resultado = $calc->dividir($_POST['numero1'], $_POST['numero2']);
+			echo "Resultado: ".$resultado;
+		} elseif ($_POST['tipo'] == 3) {
+			$resultado = $calc->multiplicar($_POST['numero1'], $_POST['numero2']);
+			echo "Resultado: ".$resultado;
+		}
+	}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
