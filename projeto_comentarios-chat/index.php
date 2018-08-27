@@ -22,3 +22,25 @@
 </fieldset>
 
 <br><br>
+
+<?php 
+	$sql = "SELECT * FROM mensagens ORDER BY data_msg DESC";
+	$sql = $pdo->query($sql);
+
+	//echo "Data: ".$mensagem['data_msg'];
+
+	if ($sql->rowCount() > 0) {
+		foreach($sql->fetchAll() as $mensagem):
+			$data = date("d/m/y \à\s H:i:s", strtotime($mensagem['data_msg'])); //Formatando a data e a hora
+
+			?>
+				<strong><?php echo $mensagem['nome']; ?></strong> - <?php echo $data; ?><br><br>
+				<?php echo $mensagem['msg']; ?>
+				<hr>
+			<?php
+		endforeach;
+	} else {
+		echo "Não há mensagens!!!";
+	}
+
+?>
