@@ -1,0 +1,1 @@
+Projeto simulando um caixa eletrônico com as operações de depósito, saque, transferência e um histórico com as movimentações da conta.
