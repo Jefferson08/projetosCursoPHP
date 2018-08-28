@@ -41,7 +41,8 @@ CREATE TABLE `contas` (
 
 LOCK TABLES `contas` WRITE;
 /*!40000 ALTER TABLE `contas` DISABLE KEYS */;
-INSERT INTO `contas` VALUES (1,'Fulano',123,321,'teste',0);
+INSERT INTO `contas` VALUES (1,'Fulano',123,321,MD5('teste'),0);
+INSERT INTO `contas` VALUES (2,'Ciclano',1234,4321,MD5('teste2'),0);
 /*!40000 ALTER TABLE `contas` ENABLE KEYS */;
 UNLOCK TABLES;
 
