@@ -1,0 +1,1 @@
+Mini sistema de rating, onde o usuário vota em um filme com uma nota de 1 a 5, e é exibida a média das notas para o respectivo filme.
